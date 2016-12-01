@@ -1,7 +1,7 @@
 import sqlite3 as sqlite
 
 
-def connect_db(filename='app/db.sqlite'):
+def connect_db(filename='db.sqlite'):
     conn = sqlite.connect(database=filename)
     init_tables(conn)
     return conn
