@@ -1,7 +1,7 @@
 import sqlite3 as sqlite
 
 
-def connect_db(filename='db.sqlite'):
+def connect_db(filename='app/db.sqlite'):
     conn = sqlite.connect(database=filename)
     init_tables(conn)
     conn.row_factory = dict_factory  # allows to call sql rows by their field name instead of by index
