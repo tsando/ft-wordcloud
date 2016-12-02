@@ -71,7 +71,7 @@ ftdb_corpus = cur.fetchall()
 ftdb_corpus = ' ::: '.join(i[0] for i in ftdb_corpus)  # must do this as fetchall returns tuple
 
 # Create simple wordcloud
-wc = WordCloud().generate(headlines_str)
+wc = WordCloud().generate(ftdb_corpus)
 plt.imshow(wc)
 plt.show()
 
